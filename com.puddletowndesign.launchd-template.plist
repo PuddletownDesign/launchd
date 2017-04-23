@@ -9,16 +9,33 @@
 		<string>com.puddletowndesign.launchd-template</string>
 
 		<!-- Contains the arguments [to exec()] used to launch your daemon. -->
+		<!-- You can use multiple strings for multiple arguments -->
 		<key>ProgramArguments</key>
 		<array>
-			<string>>/Users/Brent/Documents/bin/backup-config.sh</string>
+			<string>/Users/Brent/Documents/bin/backup-config.sh</string>
 		</array>
 
-		<!-- Time in Seconds - 43200 is Run every 12 hours -->
+		<!-- Time in Seconds - 43200 is every 12 hours -->
 		<key>StartInterval</key>
 		<integer>43200</integer>
 
 		<!-- OPTIONAL KEYS BELOW HERE, REMOVE THE ONES YOU DON'T NEED -->
+
+		<!-- Set by Calendar interval - You can use this instead of StartInterval -->
+		<!-- This job runs at midnight every time July 11 falls on a Sunday -->
+		<key>StartCalendarInterval</key>
+		<dict>
+			<key>Minute</key>
+			<integer>0</integer>
+			<key>Hour</key>
+			<integer>0</integer>
+			<key>Day</key>
+			<integer>11</integer>
+			<key>Weekday</key>
+			<integer>0</integer>
+			<key>Month</key>
+			<integer>7</integer>
+		</dict>
 
 		<!-- Run every 12 hours -->
 		<key>ProcessType</key>
@@ -26,19 +43,17 @@
 
 		<!-- Set logging of output for each time it is run -->
 		<key>StandardOutPath</key>
-		<string>>/Users/Brent/Library/Logs/app.log</string>
+		<string>>/Users/Brent/Library/Logs/launchd.log</string>
 
 		<!-- Set logging of errors for each time it is run -->
 		<key>StandardErrorPath</key>
-		<string>>/Users/Brent/Library/Logs/app-Errors.log</string>
+		<string>>/Users/Brent/Library/Logs/launchd-errors.log</string>
 
-		<!-- This optional key specifies the user to run the job as. This key
-    is only applicable when launchd is running as root. -->
+		<!-- This optional key specifies the user to run the job as. This key is only applicable when launchd is running as root. -->
 		<key>UserName</key>
 		<string>Brent</string>
 
-		<!-- This optional key specifies the user to run the job as. This key
-		is only applicable when launchd is running as root. -->
+		<!-- This optional key specifies the user to run the job as. This key is only applicable when launchd is running as root. -->
 		<key>GroupName</key>
 		<string>www</string>
 
