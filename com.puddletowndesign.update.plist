@@ -8,15 +8,17 @@
 	<string>com.puddletowndesign.update</string>
 	<key>ProcessType</key>
 	<string>Background</string>
-	<key>Program</key>
-	<string>/Users/Brent/Documents/Dev/bin/update-configs.sh</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>chsh</string>
+		<string>-s</string>
+		<string>/usr/local/bin/zsh &amp;&amp; /Users/Brent/Documents/Dev/bin/update-configs.sh</string>
+	</array>
 	<key>StandardErrorPath</key>
-	<string>/Users/Brent/Desktop/com.puddletowndesign.update.err</string>
+	<string>/Users/Brent/Documents/Dev/Logs/launchd-errors.log</string>
 	<key>StandardOutPath</key>
-	<string>/Users/Brent/Desktop/com.puddletowndesign.update.out</string>
+	<string>/Users/Brent/Documents/Dev/Logs/launchd.log</string>
 	<key>StartInterval</key>
 	<integer>3600</integer>
-	<key>UserName</key>
-	<string>Brent</string>
 </dict>
 </plist>
