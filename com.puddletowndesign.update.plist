@@ -10,6 +10,10 @@
 	<string>Background</string>
 	<key>Program</key>
 	<string>/Users/Brent/Documents/Dev/bin/update-configs.sh</string>
+	<key>StandardErrorPath</key>
+	<string>/Users/Brent/Desktop/com.puddletowndesign.update.err</string>
+	<key>StandardOutPath</key>
+	<string>/Users/Brent/Desktop/com.puddletowndesign.update.out</string>
 	<key>StartInterval</key>
 	<integer>3600</integer>
 	<key>UserName</key>
