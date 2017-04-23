@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Disabled</key>
-	<true/>
+	<false/>
 	<key>Label</key>
 	<string>com.puddletowndesign.backup</string>
 	<key>ProcessType</key>

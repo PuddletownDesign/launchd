@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" \ "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<!-- REQUIRED KEYS -->
+
+		<!-- Contains a unique string that identifies your daemon to launchd. -->
+		<key>Label</key>
+		<string>com.puddletowndesign.launchd-template</string>
+
+		<!-- Contains the arguments [to exec()] used to launch your daemon. -->
+		<key>ProgramArguments</key>
+		<array>
+			<string>>/Users/Brent/Documents/bin/backup-config.sh</string>
+		</array>
+
+		<!-- Time in Seconds - 43200 is Run every 12 hours -->
+		<key>StartInterval</key>
+		<integer>43200</integer>
+
+		<!-- OPTIONAL KEYS BELOW HERE, REMOVE THE ONES YOU DON'T NEED -->
+
+		<!-- Run every 12 hours -->
+		<key>ProcessType</key>
+		<string>Background</string>
+
+		<!-- Set logging of output for each time it is run -->
+		<key>StandardOutPath</key>
+		<string>>/Users/Brent/Library/Logs/app.log</string>
+
+		<!-- Set logging of errors for each time it is run -->
+		<key>StandardErrorPath</key>
+		<string>>/Users/Brent/Library/Logs/app-Errors.log</string>
+
+		<!-- This optional key specifies the user to run the job as. This key
+    is only applicable when launchd is running as root. -->
+		<key>UserName</key>
+		<string>Brent</string>
+
+		<!-- This optional key specifies the user to run the job as. This key
+		is only applicable when launchd is running as root. -->
+		<key>GroupName</key>
+		<string>www</string>
+
+		<!-- set priority -->
+		<key>Nice</key>
+		<integer>20</integer>
+
+		<key>LowPriorityIO</key>
+		<true/>
+
+		<!-- Specifies keeping a connection alive -->
+		<key>KeepAlive</key>
+		<false/>
+
+	</dict>
+</plist>

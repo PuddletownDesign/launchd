@@ -14,6 +14,11 @@ Some quick launchd scripts to backup development configuration to github each ho
 
 5.  Symlink the files to the LaunchAgents Directory
 
+
+    ln -s ~/Documents/Dev/LaunchAgents/com.puddletowndesign.backup.plist ~/Library/LaunchAgents/com.puddletowndesign.backup.plist
+
+    ln -s ~/Documents/Dev/LaunchAgents/com.puddletowndesign.update.plist ~/Library/LaunchAgents/com.puddletowndesign.update.plist
+
 6.  Load the jobs into launchd
 
 Done!
