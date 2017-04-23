@@ -12,6 +12,8 @@ Some quick launchd scripts to backup development configuration to github each ho
 
 4.  Edit the `backup-configs.sh` file for the files that you have on your system. Delete all the sections for folders you don't have.
 
-5.  Load the jobs into lauchd
+5.  Symlink the files to the LaunchAgents Directory
+
+6.  Load the jobs into launchd
 
 Done!
