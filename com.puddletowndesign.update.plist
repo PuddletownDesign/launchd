@@ -12,12 +12,12 @@
 	<array>
 		<string>chsh</string>
 		<string>-s</string>
-		<string>/usr/local/bin/zsh &amp;&amp; /Users/Brent/Documents/Dev/bin/update-configs.sh</string>
+		<string>/usr/local/bin/zsh &amp;&amp; /Users/Brent/Dev/Config/bin/update-configs.sh</string>
 	</array>
 	<key>StandardErrorPath</key>
-	<string>/Users/Brent/Documents/Dev/Logs/launchd-errors.log</string>
+	<string>/Users/Brent/Dev/Config/Logs/launchd-errors.log</string>
 	<key>StandardOutPath</key>
-	<string>/Users/Brent/Documents/Dev/Logs/launchd.log</string>
+	<string>/Users/Brent/Dev/Config/Logs/launchd.log</string>
 	<key>StartInterval</key>
 	<integer>3600</integer>
 </dict>

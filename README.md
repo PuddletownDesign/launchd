@@ -8,16 +8,16 @@ Some quick launchd scripts to backup development configuration to github each ho
 
 2.  Edit the `com.puddletowndesign.backup.plist` & `com.puddletowndesign.update.plist` to match your username. (Change brent to your own username.)
 
-3.  Clone/ Fork the <https://github.com/PuddletownDesign/bin> into `~/Documents/Dev`
+3.  Clone/ Fork the <https://github.com/PuddletownDesign/bin> into `~/Dev/Config`
 
 4.  Edit the `backup-configs.sh` file for the files that you have on your system. Delete all the sections for folders you don't have.
 
 5.  Symlink the files to the LaunchAgents Directory
 
 
-    ln -s ~/Documents/Dev/LaunchAgents/com.puddletowndesign.backup.plist ~/Library/LaunchAgents/com.puddletowndesign.backup.plist
+    ln -s ~/Dev/Config/LaunchAgents/com.puddletowndesign.backup.plist ~/Library/LaunchAgents/com.puddletowndesign.backup.plist
 
-    ln -s ~/Documents/Dev/LaunchAgents/com.puddletowndesign.update.plist ~/Library/LaunchAgents/com.puddletowndesign.update.plist
+    ln -s ~/Dev/Config/LaunchAgents/com.puddletowndesign.update.plist ~/Library/LaunchAgents/com.puddletowndesign.update.plist
 
 6.  Load the jobs into launchd
 

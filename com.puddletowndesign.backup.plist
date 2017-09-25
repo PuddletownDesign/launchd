@@ -9,11 +9,11 @@
 	<key>ProcessType</key>
 	<string>Background</string>
 	<key>Program</key>
-	<string>/Users/Brent/Documents/Dev/bin/backup-configs.sh</string>
+	<string>/Users/Brent/Dev/Config/bin/backup-configs.sh</string>
 	<key>StandardErrorPath</key>
-	<string>/Users/Brent/Documents/Dev/Logs/launchd-errors.log</string>
+	<string>/Users/Brent/Dev/Config/Logs/launchd-errors.log</string>
 	<key>StandardOutPath</key>
-	<string>/Users/Brent/Documents/Dev/Logs/launchd.log</string>
+	<string>/Users/Brent/Dev/Config/Logs/launchd.log</string>
 	<key>StartInterval</key>
 	<integer>3600</integer>
 	<key>UserName</key>
